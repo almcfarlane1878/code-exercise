@@ -20,6 +20,7 @@ To avoid installing Python packages system-wide on consuming users machine, or p
 ## GitHub Actions
 
 There is a GitHub action in this repo, select actions tab above to trigger script without needing any infra or local setup.
+
     `1 - Open Actions Tab `
     `2 - Select "Python Application" workflow`
     `3 - Select "Run Workflow" -> "Main" branch`
