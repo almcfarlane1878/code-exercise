@@ -3,16 +3,10 @@
 ## Local Testing
 
 Based on user josevalim, user is public user so no auth required if replacing with another user be sure you can auth with a simple curl command.
-    curl -L \
-    -H "Accept: application/vnd.github+json" \  
-    -H "X-GitHub-Api-Version: 2022-11-28" \
-    https://api.github.com/users/josevalim
+    `curl -L -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/users/josevalim`
 
 Then focus on gathering advice
-    curl -L \
-    -H "Accept: application/vnd.github+json" \
-    -H "X-GitHub-Api-Version: 2022-11-28" \
-    https://api.github.com/users/josevalim/events 
+    `curl -L -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/users/josevalim/events`
 
 Steps above will be sure you can pull all the required info from the machine you are on
 
@@ -25,7 +19,11 @@ To avoid installing Python packages system-wide on consuming users machine, or p
 
 ## GitHub Actions
 
-There is a GitHub action in this repo, select actions tab above to trigger script without needing any infra or local setup
+There is a GitHub action in this repo, select actions tab above to trigger script without needing any infra or local setup.
+    `1 - Open Actions Tab `
+    `2 - Select "Python Application" workflow`
+    `3 - Select "Run Workflow" -> "Main" branch`
+    `4 - Open the manually trigger run, select "Run script" step, answer will be provided`
 
 ## Future enhancements 
 1 - Include token for Auth
