@@ -31,6 +31,7 @@ There is a GitHub action in this repo, select actions tab above to trigger scrip
 3 - Instead of hard-coded increments, could make a dictory and multipy at the end += 4, maybe something like - https://stackoverflow.com/questions/34693927/multiple-increment-operators-on-the-same-line-python#:~:text=You%20can%20create%20special%20function%20for%20it%3A%20def,value2%2C%20value3%20%3D%20inc%20%28value4%2C%20value1%2C%20value2%2C%20value3%29
 
 4 - instead  of this big list of event types vars, dictoarys and scores, could dyanmicallly pull this?
+
     #EventTypes
     pull_request_event = "PullRequestEvent"
     push_event_type = "PushEvent"
