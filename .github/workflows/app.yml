@@ -13,10 +13,8 @@ permissions:
   contents: read
 
 jobs:
-  build:
-
+  build-and-run:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.10
@@ -27,3 +25,5 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         python3 -m pip install -r requirements.txt
+    - name: Run script
+      run: python3 app.py
