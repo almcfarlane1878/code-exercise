@@ -34,7 +34,7 @@ If the consuming users do not want to clone files or run Python, you can find a 
     `2 - Select "Python Application" workflow`
     `3 - Select "Run Workflow" -> "Main" branch`
     `4 - Open the manually trigger run,
-    `5 - select "Run script" step, answer will be provided ![image](https://github.com/almcfarlane1878/code-exercise/assets/54910866/48c5fa76-aa5f-4d9e-aea8-28d2e1cac82c)`
+    `5 - select "Run script" step, answer will be provided`
    ![image](https://github.com/almcfarlane1878/code-exercise/assets/54910866/f77e30a8-5036-4cc3-879a-ea861528fabc)
 
 
