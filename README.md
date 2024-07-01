@@ -21,7 +21,7 @@ Please clone the whole repo to your machine
 To avoid installing Python packages system-wide on consuming users machine, or pipeline in later step plesae use a virtual environment:
     
     python3 -m venv path/to/venv
-    source path/to/venv/bin/activate
+    source path/to/venv/bin/activate (could be path/to/venv_/**Scripts**_/activate if on windows)
     python3 -m pip install -r requirements.txt
     python3 app.py
     
