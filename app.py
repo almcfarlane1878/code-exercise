@@ -40,4 +40,4 @@ event_scores = [pull_request_event_score, push_event_score, issue_comment_event_
 other_events_score = sum(other_events.values())
 total_score = sum(event_scores, other_events_score)
 
-print(f"The user", user, "has a total scoe of", total_score)
+print(f"The user", user, "has a total score of", total_score)
