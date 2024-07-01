@@ -1,25 +1,34 @@
 # code-exercise
 
-## Local Testing
+## Local Process validation
 
-Based on user josevalim, user is public user so no auth required if replacing with another user be sure you can auth with a simple curl command.
+Based on user josevalim, user is public user meaning no auth is required however you should validate you can hit the users GitHub API address using a curl command: 
     `curl -L -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/users/josevalim`
 
-Then focus on gathering advice
+Then focus on gathering events with another curl command:
     `curl -L -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/users/josevalim/events`
 
-Steps above will be sure you can pull all the required info from the machine you are on
+The steps above will be sure you can pull all the required info from the machine you are using. 
 
-Now to run python, all tested on python3 (if previous verision please remove "3").
+## Local Testing
+
+Now to run python,** all tested on python3 (if previous version of python installed please remove "3").**
+
+Please clone the whole repo to your machine
+
+`git clone https://github.com/almcfarlane1878/code-exercise.git`
+
 To avoid installing Python packages system-wide on consuming users machine, or pipeline in later step plesae use a virtual environment:
     
-    python3 -m venv path/to/venv
+    `python3 -m venv path/to/venv
     source path/to/venv/bin/activate
     python3 -m pip install -r requirements.txt
+    python3 app.py`
+    
 
 ## GitHub Actions
 
-There is a GitHub action in this repo, select actions tab above to trigger script without needing any infra or local setup.
+If the consuming users do not want to clone files or run Python, you can find a GitHub action in this repo. Select "Actions" tab above to trigger script without needing any infra or local setup.
 
     `1 - Open Actions Tab `
     `2 - Select "Python Application" workflow`
@@ -27,9 +36,9 @@ There is a GitHub action in this repo, select actions tab above to trigger scrip
     `4 - Open the manually trigger run, select "Run script" step, answer will be provided`
 
 ## Future enhancements 
-1 - Include token for Auth
-2 - Replace URL as var to pull other apis from github
-3 - Instead of hard-coded increments, could make a dictory and multipy at the end += 4, maybe something like - https://stackoverflow.com/questions/34693927/multiple-increment-operators-on-the-same-line-python#:~:text=You%20can%20create%20special%20function%20for%20it%3A%20def,value2%2C%20value3%20%3D%20inc%20%28value4%2C%20value1%2C%20value2%2C%20value3%29
+1 - Include token for auth (to ensure script works for users who are not public"
+2 - Replace URL as var to pull other apis from github if needed
+3 - Instead of hard-coded increments, could make a dictory and multiply at the end += 4, maybe something like - https://stackoverflow.com/questions/34693927/multiple-increment-operators-on-the-same-line-python#:~:text=You%20can%20create%20special%20function%20for%20it%3A%20def,value2%2C%20value3%20%3D%20inc%20%28value4%2C%20value1%2C%20value2%2C%20value3%29
 
 4 - instead  of this big list of event types vars, dictoarys and scores, could dyanmicallly pull this?
 
