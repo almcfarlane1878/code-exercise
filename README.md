@@ -33,7 +33,9 @@ If the consuming users do not want to clone files or run Python, you can find a 
     `1 - Open Actions Tab `
     `2 - Select "Python Application" workflow`
     `3 - Select "Run Workflow" -> "Main" branch`
-    `4 - Open the manually trigger run, select "Run script" step, answer will be provided`
+    `4 - Open the manually trigger run,
+    `5 - select "Run script" step, answer will be provided ![image](https://github.com/almcfarlane1878/code-exercise/assets/54910866/48c5fa76-aa5f-4d9e-aea8-28d2e1cac82c)`
+   
 
 ## Future enhancements 
 1 - Include token for auth (to ensure script works for users who are not public"
